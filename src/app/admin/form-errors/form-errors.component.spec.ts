@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormGroupDirective, ReactiveFormsModule } from '@angular/forms';
 
 import { FormErrorsComponent } from './form-errors.component';
 
@@ -8,7 +9,9 @@ describe('FormErrorsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FormErrorsComponent ]
+      imports: [ReactiveFormsModule],
+      declarations: [FormErrorsComponent],
+      providers: [FormGroupDirective]
     })
     .compileComponents();
   });
