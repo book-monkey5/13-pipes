@@ -14,9 +14,7 @@ describe('FormErrorsComponent', () => {
       providers: [FormGroupDirective]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(FormErrorsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

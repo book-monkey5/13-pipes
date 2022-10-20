@@ -13,9 +13,7 @@ describe('SearchComponent', () => {
       declarations: [ SearchComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(SearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
