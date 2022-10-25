@@ -9,8 +9,8 @@ describe('IsbnPipe', () => {
   });
 
   it('should format an ISBN with a dash', () => {
-    expect(pipe.transform('9783864907791'))
-      .toBe('978-3864907791'); 
+    expect(pipe.transform('9783864909467'))
+      .toBe('978-3864909467'); 
   });
 
   it('should ignore empty values', () => {
